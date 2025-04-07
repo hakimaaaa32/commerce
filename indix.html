@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application de Vente de Sacs</title>
+  <link rel="stylesheet" href="fichier css/styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <button class="nav-btn" onclick="showPage('homePage')">Accueil</button>
+    <button class="nav-btn" onclick="showPage('shopPage')">Shopping</button>
+    <li><a href="html/f.html">Formulaire</a></li>
+  </nav>
+
+
+  <main class="content">
+    <!-- Page d'accueil -->
+    <section id="homePage" class="page">
+      <h1 style="text-align: center;">Découvrez les dernières collections de sacs tendance qui ajoutent <br>
+        une touche d'élégance à chaque occasion</h1>
+      <div class="slideshow-container">
+        <img id="slideshow" src="img/sac.jpg" alt="Affichage des sacs">
+      </div>
+    </section>
+   
+
+
+    <!-- Page de vente de sacs -->
+    <section id="shopPage" class="page hidden">
+      <h2>Vente de sacs</h2>
+      <div class="product-grid" id="productGrid"></div>
+
+      <!-- Section affichant le nombre d'articles achetés et le total -->
+      <div class="purchase-summary">
+        <p>Nombre d'articles : <span id="totalItems">0</span></p>
+        <p>Total : <span id="totalPrice">0</span> DH</p><br><br>
+      </div>
+      
+            
+  
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 </p>
+  </footer>
+
+  <script src="fichier javascript/script.js"></script>
+</body>
+</html
